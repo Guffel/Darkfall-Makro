@@ -1,0 +1,5 @@
+C:\Users\Derok\Documents\GitHub\Markoprogram\darkfallmakro\darkfallmakro\bin\Debug\darkfallmakro.exe
+C:\Users\Derok\Documents\GitHub\Markoprogram\darkfallmakro\darkfallmakro\bin\Debug\darkfallmakro.pdb
+C:\Users\Derok\Documents\GitHub\Markoprogram\darkfallmakro\darkfallmakro\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Derok\Documents\GitHub\Markoprogram\darkfallmakro\darkfallmakro\obj\x86\Debug\darkfallmakro.exe
+C:\Users\Derok\Documents\GitHub\Markoprogram\darkfallmakro\darkfallmakro\obj\x86\Debug\darkfallmakro.pdb
