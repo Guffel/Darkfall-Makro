@@ -9,7 +9,7 @@ namespace darkfallmakro
     {
         static void Main(string[] args)
         {
-            //blabla
+            String cmd = Console.ReadLine();
         }
     }
 }
