@@ -9,6 +9,7 @@ namespace darkfallmakro
     {
         static void Main(string[] args)
         {
+            Server test = new Server();
             String cmd = Console.ReadLine();
         }
     }
