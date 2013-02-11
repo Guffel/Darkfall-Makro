@@ -18,6 +18,10 @@ namespace darkfallmakro
             System.Threading.Thread.Sleep(3000);
             Control ctrl = new Control();
             Console.WriteLine("Simulating E");
+            ctrl.SendKeyDown(Control.KeyCode.KEY_2);
+            System.Threading.Thread.Sleep(500);
+            ctrl.SendKeyUp(Control.KeyCode.KEY_2);
+            System.Threading.Thread.Sleep(500);
             ctrl.test();
             Console.ReadLine();
         }
