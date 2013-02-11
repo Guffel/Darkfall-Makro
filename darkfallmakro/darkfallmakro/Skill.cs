@@ -9,22 +9,28 @@ namespace darkfallmakro
     class Skill
     {
         private String name;
-        private int coolDown;
+        private Boolean onCD = false;
         private int castTime;
-        private Timer t1 = new Timer();
-        t1.Interval = 100;
-        t1.Tick+=new EventHandler(t1_Tick);
-        t1.Start();
+        private Timer cd;
 
         public Skill(String name, int coolDown, int castTime)
         {
             this.name = name;
-            this.coolDown = coolDown;
             this.castTime = castTime;
+            this.cd = new Timer(coolDown); // in ms            
+            this.cd.Elapsed += new ElapsedEventHandler(resetCD);
+            this.cd.Enabled = true;
         }
-        void t1_Tick(object sender, EventArgs e)
+
+        public void castSpell()
         {
-// dieser Code wird ausgeführt, wenn der Timer abgelaufen ist
+            this.cd.Enabled = true;
+        }
+
+        private void resetCD(object source, ElapsedEventArgs e)
+        {
+            Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }   
     }
 }
