@@ -10,7 +10,8 @@ namespace darkfallmakro
     {
         static void Main(string[] args)
         {
-            SimulateKeytest();
+            //SimulateKeytest();
+            test();
         }
 
         private static void SimulateKeytest()
@@ -23,7 +24,12 @@ namespace darkfallmakro
             ctrl.SendKeyUp(Control.KeyCode.KEY_2);
             System.Threading.Thread.Sleep(500);
             ctrl.test();
-            Console.ReadLine();
+            Console.ReadLine(); 
+        }
+        private static void test()
+        {
+            Skill asd = new Skill("AoE", 2, 1);
+            asd.castSpell();
         }
     }
 }
