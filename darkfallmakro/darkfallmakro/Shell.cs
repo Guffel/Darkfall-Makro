@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
-using System
 
 namespace darkfallmakro
 {
@@ -19,7 +18,7 @@ namespace darkfallmakro
             System.Threading.Thread.Sleep(3000);
             Control ctrl = new Control();
             Console.WriteLine("Simulating E");
-            ctrl.KeyPress();
+            ctrl.test();
             Console.ReadLine();
         }
     }
