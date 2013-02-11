@@ -28,7 +28,7 @@ namespace darkfallmakro
         }
         private static void test()
         {
-            Skill asd = new Skill("AoE", 2, 1);
+            Skill asd = new Skill("AoE", 5, 1);
             asd.castSpell();
         }
     }

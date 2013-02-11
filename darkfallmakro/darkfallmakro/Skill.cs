@@ -11,13 +11,13 @@ namespace darkfallmakro
         private String name;
         private Boolean onCD = false;
         private int castTime;
-        private Timer cd;
+        private Timer cd; 
 
         public Skill(String name, int coolDown, int castTime)
         {
             this.name = name;
             this.castTime = castTime;
-            this.cd = new Timer(coolDown); // in ms            
+            this.cd = new Timer(castTime);
             this.cd.Elapsed += new ElapsedEventHandler(resetCD);
             this.cd.Enabled = true;
         }
