@@ -14,6 +14,8 @@ namespace darkfallmakro
         private int castTime; 
         private Timer cd;
         private int priority;
+        private int stamina;
+        private int mana;        
         private Skill previousSkill = null;
         private Skill nextSkill = null;
 
@@ -27,6 +29,7 @@ namespace darkfallmakro
             this.cd = new Timer(this.coolDown + this.castTime);
             this.cd.Elapsed += new ElapsedEventHandler(resetCD);
             this.cd.AutoReset = false;
+            player.enqueue(this);
         }
 
         public int getPriority()
@@ -77,16 +80,20 @@ namespace darkfallmakro
             return nextSkill;
         }
 
+        public int getCastTime()
+        {
+            return castTime;
+        }
+
         public void castSpell()
         {
-            //player.setCD(this);
             this.cd.Start();
+            Console.WriteLine("Cast " + name);
         }
 
         private void resetCD(object source, ElapsedEventArgs e)
         {
-            //IS READY
-            Console.WriteLine("Hello World!");
+            player.enqueue(this);            
         }        
     }
 }

@@ -29,7 +29,7 @@ namespace darkfallmakro
         private static void test()
         {
             Player asd = new Player();
-            Console.WriteLine("fertig");
+            asd.initCasting();
             Console.ReadLine(); 
         }
     }
