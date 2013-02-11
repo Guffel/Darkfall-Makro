@@ -9,3 +9,5 @@ C:\Users\Derok\Documents\GitHub\Darkfall-Makro\darkfallmakro\darkfallmakro\bin\D
 C:\Users\Derok\Documents\GitHub\Darkfall-Makro\darkfallmakro\darkfallmakro\bin\Debug\darkfallmakro.pdb
 C:\Users\Derok\Documents\GitHub\Darkfall-Makro\darkfallmakro\darkfallmakro\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\Derok\Documents\GitHub\Darkfall-Makro\darkfallmakro\darkfallmakro\bin\Debug\MouseKeyboardLibrary.dll
+C:\Users\Gordi\Documents\GitHub\Darkfall-Makro\darkfallmakro\darkfallmakro\obj\x86\Debug\darkfallmakro.exe
+C:\Users\Gordi\Documents\GitHub\Darkfall-Makro\darkfallmakro\darkfallmakro\obj\x86\Debug\darkfallmakro.pdb

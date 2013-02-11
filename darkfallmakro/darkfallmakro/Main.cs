@@ -7,6 +7,5 @@ namespace darkfallmakro
 {
     class Main
     {
-//blub
     }
 }
