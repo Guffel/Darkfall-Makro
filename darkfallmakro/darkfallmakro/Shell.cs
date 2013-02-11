@@ -28,8 +28,9 @@ namespace darkfallmakro
         }
         private static void test()
         {
-            Skill asd = new Skill("AoE", 5, 1);
-            asd.castSpell();
+            Player asd = new Player();
+            Console.WriteLine("fertig");
+            Console.ReadLine(); 
         }
     }
 }
