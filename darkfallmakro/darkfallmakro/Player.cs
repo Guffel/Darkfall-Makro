@@ -32,7 +32,6 @@ namespace darkfallmakro
             {
                 if (firstInQueue.getPriority() < skill.getPriority())
                 {
-                    firstInQueue.setPreviousSkill(skill);
                     skill.setNextSkill(firstInQueue);                   
                     firstInQueue = skill;
                 }

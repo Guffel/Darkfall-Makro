@@ -15,8 +15,7 @@ namespace darkfallmakro
         private Timer cd;
         private int priority;
         private int stamina;
-        private int mana;        
-        private Skill previousSkill = null;
+        private int mana;
         private Skill nextSkill = null;
 
         public Skill(Player player, String name, int coolDown, int castTime, int priority)
@@ -42,32 +41,19 @@ namespace darkfallmakro
             if (nextSkill == null)
             {
                 nextSkill = skill;
-                skill.setPreviousSkill(this);
             }
             else
             {
                 if (nextSkill.getPriority() < skill.getPriority())
                 {
-                    nextSkill.setPreviousSkill(skill);
                     skill.setNextSkill(nextSkill);                    
                     nextSkill = skill;
-                    nextSkill.setPreviousSkill(this);
                 }
                 else
                 {
                     nextSkill.enqueue(skill);
                 }
             }
-        }
-
-        public void setPreviousSkill(Skill skill)
-        {
-            previousSkill = skill;
-        }
-
-        public Skill getPreviousSkill()
-        {
-            return previousSkill;
         }
 
         public void setNextSkill(Skill skill)
